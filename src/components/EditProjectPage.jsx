@@ -24,7 +24,7 @@ function EditProjectPage(props) {
       });
   };
 
-  const deleteProject = () => {                
+  const deleteProject = () => {
     // Make a DELETE request to delete the project
     axios
       .delete(`${API_URL}/projects/${projectId}`)
@@ -47,8 +47,6 @@ function EditProjectPage(props) {
       title: title,
       description: description,
     };
-
-    
 
     axios
       .put(`${API_URL}/projects/${projectId}`, projectObj)

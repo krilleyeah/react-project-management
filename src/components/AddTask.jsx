@@ -12,7 +12,7 @@ function AddTask(props) {
     e.preventDefault();
 
     const currentProjectId = parseInt(props.projectId); // id of the project to which we assign the task
-    
+
     const newTask = {
       title,
       description,
